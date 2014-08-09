@@ -1,12 +1,14 @@
 #include "debuger.h"
 #include <iostream>
+#include <sstream>
 debugger::debugger()
 {
 
 }
-debugger::debugger(chip8_debug* c8,std::string file_name)
+debugger::debugger(chip8_debug* c8,std::string file_name,std::string mem_file_name)
 {
     file.open(file_name);
+    mem_dump_file.open(mem_file_name);
     chip=c8;
     current_state=new chip8_state;
 }
@@ -86,4 +88,11 @@ void debugger::save_stack()
         file<<"Stack "<<iii<<": "<<std::hex<<current_state->stack[iii]<<" ";
     }
     file<<"\n";
+}
+void debugger::mem_dump()
+{
+    for(unsigned int iii=0;iii<4096;iii++){
+        mem_dump_file<<std::hex<<(short)chip->memory[iii]<<" ";
+    }
+    mem_dump_file.close();
 }
