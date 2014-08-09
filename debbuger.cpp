@@ -1,14 +1,19 @@
 #include "debuger.h"
-/*debuger::debuger()
+debugger::debugger()
 {
 
 }
-void debuger::print_info()
+debugger::debugger(chip8_debug* c8,std::string file_name)
+{
+    file.open(file_name);
+    chip=c8;
+}
+void debugger::print_info()
 {
 
 }
-void debuger::save_info()
+void debugger::save_info()
 {
 
 }
-*/
+
