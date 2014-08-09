@@ -96,3 +96,13 @@ void debugger::mem_dump()
     }
     mem_dump_file.close();
 }
+void debugger::opcode_dump()
+{
+    unsigned short opcode;
+    for(unsigned int iii=0;iii<4096;iii+=2){
+        //mem_dump_file<<std::hex<<(short)chip->memory[iii]<<" ";
+        opcode = chip->memory[iii] << 8 | chip->memory[iii + 1];
+        mem_dump_file<<std::hex<<opcode<<" ";
+    }
+    mem_dump_file.close();
+}

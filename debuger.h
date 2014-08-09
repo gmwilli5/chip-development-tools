@@ -23,5 +23,6 @@ class debugger{
         void save_registers();
         void save_stack();
         void mem_dump();
+        void opcode_dump();
 };
 #endif // DEBUGER_H_INCLUDED

@@ -71,7 +71,8 @@ void chip8_debug::init()
 	debug=new debugger(this,"assfuck.txt","memassfuck.txt");
 	debug->save_info();
 	debug->print_info();
-	debug->mem_dump();
+	//debug->mem_dump();
+	debug->opcode_dump();
 }
 
 void chip8_debug::emulateCycle()
