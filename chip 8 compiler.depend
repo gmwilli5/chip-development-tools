@@ -1,0 +1,109 @@
+# depslib dependency file v1.0
+1407456292 source:c:\users\george williams\desktop\opengl\chip 8 compiler\compiler_error.cpp
+	<iostream>
+	"compiler_error.h"
+
+1407456292 c:\users\george williams\desktop\opengl\chip 8 compiler\compiler_error.h
+	<string>
+
+1407456292 source:c:\users\george williams\desktop\opengl\chip 8 compiler\instructions.cpp
+	"compiler.h"
+	<string>
+	<sstream>
+
+1407534031 c:\users\george williams\desktop\opengl\chip 8 compiler\compiler.h
+	"file.h"
+	"compiler_error.h"
+	<vector>
+	<string>
+
+1407533362 c:\users\george williams\desktop\opengl\chip 8 compiler\file.h
+	<fstream>
+	<string>
+	<vector>
+
+1407456292 source:c:\users\george williams\desktop\opengl\chip 8 compiler\ld_instructions.cpp
+	"compiler.h"
+	<string>
+
+1407534092 source:c:\users\george williams\desktop\opengl\chip 8 compiler\compiler.cpp
+	"compiler.h"
+	<sstream>
+
+1407536073 source:c:\users\george williams\desktop\opengl\chip 8 compiler\main.cpp
+	<iostream>
+	"compiler.h"
+
+1407536058 source:c:\users\george williams\desktop\opengl\chip 8 compiler\file.cpp
+	"file.h"
+	<iostream>
+
+1407544203 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\compiler.cpp
+	"compiler.h"
+	<sstream>
+	<iostream>
+
+1407534031 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\compiler.h
+	"file.h"
+	"compiler_error.h"
+	<vector>
+	<string>
+
+1407533362 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\file.h
+	<fstream>
+	<string>
+	<vector>
+
+1407456292 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\compiler_error.h
+	<string>
+
+1407456292 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\compiler_error.cpp
+	<iostream>
+	"compiler_error.h"
+
+1407544558 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\instructions.cpp
+	"compiler.h"
+	<string>
+	<sstream>
+	<iostream>
+
+1407456292 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\ld_instructions.cpp
+	"compiler.h"
+	<string>
+
+1407544810 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\main.cpp
+	<iostream>
+	"compiler.h"
+
+1407539265 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\file.cpp
+	"file.h"
+	<iostream>
+
+1407546332 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8.cpp
+	"chip8.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1407546361 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8.h
+
+1407546491 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_main.cpp
+	<stdio.h>
+	<GL/freeglut.h>
+	"chip8.h"
+
+1368294560 c:\users\george williams\downloads\freeglut-mingw-2.8.1-1.mp\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1368294560 c:\users\george williams\downloads\freeglut-mingw-2.8.1-1.mp\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1368294560 c:\users\george williams\downloads\freeglut-mingw-2.8.1-1.mp\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
