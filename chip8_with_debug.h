@@ -1,5 +1,7 @@
 #ifndef CHIP8_WITH_DEBUG_H_INCLUDED
 #define CHIP8_WITH_DEBUG_H_INCLUDED
+#include "debuger.h"
+class debugger;
 class chip8_debug{
     public:
         unsigned char  gfx[64 * 32];	// Total amount of pixels: 2048
@@ -13,6 +15,7 @@ class chip8_debug{
 		unsigned char  memory[4096];
 		unsigned char  delay_timer;
 		unsigned char  sound_timer;
+		debugger* debug;
     public:
         chip8_debug();
 		~chip8_debug();

@@ -37,7 +37,7 @@ int chip8_main(int argc, char **argv)
 	if(!myChip8.loadApplication(argv[1]))
 		return 1;
     */
-    myChip8.loadApplication("test_program.c8");
+    myChip8.loadApplication("tetris.c8");
 	// Setup OpenGL
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);

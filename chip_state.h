@@ -1,6 +1,7 @@
 #ifndef CHIP_STATE_H_INCLUDED
 #define CHIP_STATE_H_INCLUDED
 #include "chip8_with_debug.h"
+class chip8_debug;
 class chip8_state{
     public:
         unsigned short I;

@@ -1,9 +1,10 @@
 #include "chip8_with_debug.h"
+#include "chip8.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-unsigned char chip8_fontset2[80] =
+unsigned char chip8_fontset[80] =
 {
     0xF0, 0x90, 0x90, 0x90, 0xF0, //0
     0x20, 0x60, 0x20, 0x20, 0x70, //1
@@ -57,7 +58,7 @@ void chip8_debug::init()
 
 	// Load fontset
 	for(int i = 0; i < 80; ++i)
-		memory[i] = chip8_fontset2[i];
+		memory[i] = chip8_fontset[i];
 
 	// Reset timers
 	delay_timer = 0;
@@ -73,7 +74,6 @@ void chip8_debug::emulateCycle()
 {
 	// Fetch opcode
 	opcode = memory[pc] << 8 | memory[pc + 1];
-
 	// Process opcode
 	switch(opcode & 0xF000)
 	{
@@ -361,12 +361,14 @@ void chip8_debug::emulateCycle()
 				break;
 
 				default:
-					printf ("Unknown opcode [0xF000]: 0x%X\n", opcode);
+					//printf ("Unknown opcode [0xF000]: 0x%X\n", opcode);
+					break;
 			}
 		break;
 
 		default:
-			printf ("Unknown opcode: 0x%X\n", opcode);
+			//printf ("Unknown opcode: 0x%X\n", opcode);
+			break;
 	}
 
 	// Update timers
