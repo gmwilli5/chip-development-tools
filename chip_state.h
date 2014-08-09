@@ -12,6 +12,7 @@ class chip8_state{
         unsigned char  delay_timer;
         unsigned char  sound_timer;
     public:
+        chip8_state();
         chip8_state(chip8_debug* chip);
         void fill_state(chip8_debug* chip);
 };

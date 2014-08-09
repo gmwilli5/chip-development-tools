@@ -1,4 +1,8 @@
 #include "chip_state.h"
+chip8_state::chip8_state()
+{
+
+}
 chip8_state::chip8_state(chip8_debug* chip)
 {
     I=chip->I;
