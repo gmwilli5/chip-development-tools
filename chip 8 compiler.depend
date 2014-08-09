@@ -87,7 +87,7 @@
 
 1407546361 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8.h
 
-1407546491 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_main.cpp
+1407598436 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_main.cpp
 	<stdio.h>
 	<GL/freeglut.h>
 	"chip8.h"
@@ -106,4 +106,17 @@
 
 1368294560 c:\users\george williams\downloads\freeglut-mingw-2.8.1-1.mp\freeglut\include\gl\freeglut_ext.h
 	<stdarg.h>
+
+1407598805 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_with_debug.cpp
+	"chip8_with_debug.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1407548344 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_with_debug.h
+
+1407598931 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_debug_main.cpp
+	<stdio.h>
+	<GL/freeglut.h>
+	"chip8.h"
 
