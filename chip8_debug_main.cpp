@@ -27,16 +27,6 @@ void setupTexture();
 
 int chip8_debug_main(int argc, char **argv)
 {
-	/*if(argc < 2)
-	{
-		printf("Usage: myChip8.exe chip8application\n\n");
-		return 1;
-	}
-
-	// Load game
-	if(!myChip8.loadApplication(argv[1]))
-		return 1;
-    */
     myChip8_debug.loadApplication("test_program.c8");
 	// Setup OpenGL
 	glutInit(&argc, argv);

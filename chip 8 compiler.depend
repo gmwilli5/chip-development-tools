@@ -115,8 +115,21 @@
 
 1407548344 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_with_debug.h
 
-1407598931 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_debug_main.cpp
+1407599403 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_debug_main.cpp
 	<stdio.h>
 	<GL/freeglut.h>
 	"chip8.h"
+
+1407600035 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\debbuger.cpp
+	"debuger.h"
+
+1407600065 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\debuger.h
+	"chip8_with_debug.cpp"
+	<fstream>
+
+1407598805 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_with_debug.cpp
+	"chip8_with_debug.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
 
