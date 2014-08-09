@@ -1,0 +1,9 @@
+#ifndef PROCCESSOR_CONTROLLER_H_INCLUDED
+#define PROCCESSOR_CONTROLLER_H_INCLUDED
+class controller{
+    public:
+
+    public:
+
+};
+#endif // PROCCESSOR_CONTROLLER_H_INCLUDED
