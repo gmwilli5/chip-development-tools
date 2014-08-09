@@ -87,7 +87,7 @@
 
 1407546361 c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8.h
 
-1407598436 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_main.cpp
+1407546491 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_main.cpp
 	<stdio.h>
 	<GL/freeglut.h>
 	"chip8.h"
@@ -107,6 +107,7 @@
 1368294560 c:\users\george williams\downloads\freeglut-mingw-2.8.1-1.mp\freeglut\include\gl\freeglut_ext.h
 	<stdarg.h>
 
+<<<<<<< HEAD
 1407598805 source:c:\users\george williams\desktop\opengl\chip 8 compiler\chip-development-tools\chip8_with_debug.cpp
 	"chip8_with_debug.h"
 	<stdio.h>
@@ -133,3 +134,5 @@
 	<stdlib.h>
 	<time.h>
 
+=======
+>>>>>>> parent of e0fc457... fixed chip8 debug so it will compile
