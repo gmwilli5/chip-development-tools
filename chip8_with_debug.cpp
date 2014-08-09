@@ -68,6 +68,9 @@ void chip8_debug::init()
 	drawFlag = true;
 
 	srand (time(NULL));
+	debug=new debugger(this,"assfuck.txt");
+	debug->save_info();
+	debug->print_info();
 }
 
 void chip8_debug::emulateCycle()

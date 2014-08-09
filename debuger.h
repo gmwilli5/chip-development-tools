@@ -9,7 +9,7 @@ class chip8_debug;
 class debugger{
     public:
         chip8_debug* chip;
-        std::fstream file;
+        std::ofstream file;
         chip8_state* current_state;
     public:
         debugger();
