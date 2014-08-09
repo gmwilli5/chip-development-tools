@@ -12,9 +12,12 @@ void compiler::run()
     line_number=1;
     get_next_line();
     while(input_file->more==true){
-        std::cout<<line_number<<"\n";
+        ///std::cout<<line_number<<"\n";
         inteperate_line();
         get_next_line();
+    }
+    for(unsigned int iii=0;iii<opcodes.size();iii++){
+        std::cout<<opcodes[iii]<<" , "<<"\n";
     }
     print_errors();
     output();
@@ -26,11 +29,11 @@ void compiler::output()
 void compiler::inteperate_line()
 {
     strip_instruction();
-    std::cout<<instruction<<"\n";
+    ///std::cout<<instruction<<"\n";
     if(instruction=="cls"){
         opcodes.push_back(0x00E0);
     }else if(instruction=="ret"){
-        opcodes.push_back(0x00EE);
+        opcodes.push_back(0x000E);
     }else if(instruction=="sys"){
         sys();
     }else if(instruction=="jp"){
@@ -115,7 +118,7 @@ void compiler::string_too_opcode(std::string opcode)
 {
     std::istringstream buffer(opcode);
     unsigned short temp_opcode;
-    buffer >> std::hex >> temp_opcode;
+    ///buffer >> std::hex >> temp_opcode;
     opcodes.push_back(temp_opcode);
 }
 void compiler::handle_error(std::string message)

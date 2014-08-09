@@ -32,10 +32,11 @@ void File::load_file()
 }
 void File::output(std::vector<unsigned short> opcodes,std::string file_name)
 {
-    file.open(file_name,std::ios::binary);
+    std::ofstream temp;
+    temp.open(file_name,std::ios::binary);
     for(unsigned int iii=0;iii<opcodes.size();iii++){
-        file<<opcodes[iii];
-        std::cout<<opcodes[iii]<<"\n";
+        temp<<std::hex<<opcodes[iii];
+        std::cout<<std::hex<<opcodes[iii]<<"\n";
     }
     file.close();
 }

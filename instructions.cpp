@@ -1,6 +1,7 @@
 #include "compiler.h"
 #include <string>
 #include <sstream>
+#include <iostream>
 ///0nnn - SYS addr
 void compiler::sys()
 {
@@ -9,16 +10,19 @@ void compiler::sys()
         temp+=line[iii];
     }
     std::string opcode="0"+temp;
+    std::cout<<opcode<<" , ";
     string_too_opcode(opcode);
 }
 ///1nnn - JP addr
 void compiler::jp()
 {
     std::string temp="";
-    for(unsigned int iii=3;iii<line.length();iii++){
+    for(unsigned int iii=4;iii<line.length();iii++){
         temp+=line[iii];
     }
     std::string opcode="1"+temp;
+    std::cout<<opcode<<" , ";
+    //std::cout<<":"<<temp<<"\n";
     string_too_opcode(opcode);
 }
 ///2nnn - CALL addr
@@ -29,6 +33,7 @@ void compiler::call()
         temp+=line[iii];
     }
     std::string opcode="2"+temp;
+    std::cout<<opcode<<" , ";
     string_too_opcode(opcode);
 }
 ///3xkk - SE Vx, byte
@@ -42,6 +47,7 @@ void compiler::se()
             temp+=line[iii];
         }
     }
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///4xkk - SNE Vx, byte
@@ -56,6 +62,7 @@ void compiler::sne()
         }
     }
     temp+='0';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///5xy0 - SER Vx, Vy
@@ -70,6 +77,7 @@ void compiler::ser()
         }
     }
     temp+='0';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///6xkk - LD Vx, byte
@@ -96,6 +104,7 @@ void compiler::add()
             temp+=line[iii];
         }
     }
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///8xy0 - LD Vx, Vy
@@ -124,6 +133,7 @@ void compiler::Or()
         }
     }
     temp+='1';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///8xy2 - AND Vx, Vy
@@ -138,6 +148,7 @@ void compiler::And()
         }
     }
     temp+='2';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///8xy3 - XOR Vx, Vy
@@ -152,6 +163,7 @@ void compiler::Xor()
         }
     }
     temp+='3';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///8xy4 - ADD Vx, Vy
@@ -166,6 +178,7 @@ void compiler::addr()
         }
     }
     temp+='4';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///8xy5 - SUB Vx, Vy
@@ -180,6 +193,7 @@ void compiler::sub()
         }
     }
     temp+='5';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///8xy6 - SHR Vx {, Vy}
@@ -194,6 +208,7 @@ void compiler::shr()
         }
     }
     temp+='6';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///8xy7 - SUBN Vx, Vy
@@ -208,6 +223,7 @@ void compiler::subn()
         }
     }
     temp+='7';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///8xyE - SHL Vx {, Vy}
@@ -222,6 +238,7 @@ void compiler::shl()
         }
     }
     temp+='E';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///9xy0 - SNEr Vx, Vy
@@ -236,6 +253,7 @@ void compiler::sner()
         }
     }
     temp+='0';
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///Annn - LDi addr
@@ -256,6 +274,7 @@ void compiler::jpv()
         temp+=line[iii];
     }
     std::string opcode="B"+temp;
+    std::cout<<temp<<" , ";
     string_too_opcode(opcode);
 }
 ///Cxkk - RND Vx, byte
@@ -269,6 +288,7 @@ void compiler::rnd()
             temp+=line[iii];
         }
     }
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///Dxyn - DRW Vx, Vy, nibble
@@ -282,6 +302,7 @@ void compiler::drw()
             temp+=line[iii];
         }
     }
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///Ex9E - SKP Vx
@@ -296,6 +317,7 @@ void compiler::skp()
         }
     }
     temp+="9E";
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///ExA1 - SKNP Vx
@@ -310,6 +332,7 @@ void compiler::sknp()
         }
     }
     temp+="A1";
+    std::cout<<temp<<" , ";
     string_too_opcode(temp);
 }
 ///00FB - SCR
@@ -320,6 +343,7 @@ void compiler::addi()
         temp+=line[iii];
     }
     std::string opcode="F"+temp+"1E";
+    std::cout<<opcode<<" , ";
     string_too_opcode(opcode);
 }
 ///00FC - SCL
