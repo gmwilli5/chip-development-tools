@@ -2,6 +2,7 @@
 //#include <glut.h>
 #include <GL/freeglut.h>
 #include "chip8_interactive.h"
+#include "proccessor_controller.h"
 
 // Display size
 #define SCREEN_WIDTH 64
@@ -131,6 +132,7 @@ void updateQuads_interactive(const chip8_interactive& c8)
 
 void display_interactive()
 {
+    myChip8_interactive.Controller->get_opcode();
 	myChip8_interactive.emulateCycle();
 	if(myChip8_interactive.drawFlag)
 	{

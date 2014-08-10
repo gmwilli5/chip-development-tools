@@ -1,5 +1,6 @@
 #ifndef CHIP8_INTERACTIVE_H_INCLUDED
 #define CHIP8_INTERACTIVE_H_INCLUDED
+class controller;
 class chip8_interactive{
     public:
         unsigned short pc;				// Program counter
@@ -15,6 +16,7 @@ class chip8_interactive{
 		unsigned char  sound_timer;		// Sound timer
         unsigned char  gfx[64 * 32];	// Total amount of pixels: 2048
 		unsigned char  key[16];
+		controller* Controller;
     public:
 		bool drawFlag;
 		void emulateCycle();

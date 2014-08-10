@@ -61,7 +61,7 @@ void chip8_interactive::init()
 void chip8_interactive::emulateCycle()
 {
 	// Fetch opcode
-	opcode = memory[pc] << 8 | memory[pc + 1];
+	///opcode = memory[pc] << 8 | memory[pc + 1];
 
 	// Process opcode
 	switch(opcode & 0xF000)
