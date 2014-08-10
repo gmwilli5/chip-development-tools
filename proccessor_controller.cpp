@@ -67,5 +67,11 @@ void controller::read_mode()
 }
 void controller::write_mode()
 {
-
+    unsigned short address;
+    unsigned char data;
+    std::cout<<"enter address: ";
+    std::cin>>address;
+    std::cout<<"\n"<<"enter data: ";
+    std::cin>>data;
+    std::cout<<"\n";
 }
