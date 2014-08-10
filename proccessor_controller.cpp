@@ -1,6 +1,7 @@
 #include "proccessor_controller.h"
 #include "debuger.h"
 #include "chip8_with_debug.h"
+#include <iostream>
 controller::controller()
 {
     paused=false;
@@ -48,6 +49,23 @@ void controller::paused_events(SDL_Event * event)
             case SDLK_r:
                 reset();
                 break;
+            case SDLK_w:
+                write_mode();
+                break;
+            case SDLK_q:
+                read_mode();
+                break;
         }
     }
+}
+void controller::read_mode()
+{
+    bool read_mode=true;
+    unsigned short input;
+    std::cin>>input;
+    std::cout<<read(input)<<"\n";
+}
+void controller::write_mode()
+{
+
 }
