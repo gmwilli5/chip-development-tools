@@ -25,7 +25,7 @@ typedef unsigned __int8 u8;
 u8 screenData[SCREEN_HEIGHT][SCREEN_WIDTH][3];
 void setupTexture();
 
-int chip8_main(int argc, char **argv)
+int chip8_interactive_main(int argc, char **argv)
 {
 	/*if(argc < 2)
 	{
