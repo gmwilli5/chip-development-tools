@@ -22,5 +22,8 @@ class controller{
         void write_mode();
         unsigned char read(unsigned short address);
         void write(unsigned short address,unsigned char data);
+        void editor_mode();
+        void editor_thread();
+        void interactive_mode();
 };
 #endif // PROCCESSOR_CONTROLLER_H_INCLUDED
