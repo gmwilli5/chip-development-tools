@@ -109,5 +109,4 @@ void debugger::opcode_dump()
 }
 void debugger::pause()
 {
-
 }
