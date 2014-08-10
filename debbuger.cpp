@@ -1,6 +1,7 @@
 #include "debuger.h"
 #include <iostream>
 #include <sstream>
+#include "SDL/SDL.h"
 debugger::debugger()
 {
 
@@ -105,4 +106,8 @@ void debugger::opcode_dump()
         mem_dump_file<<std::hex<<opcode<<" ";
     }
     mem_dump_file.close();
+}
+void debugger::pause()
+{
+
 }

@@ -1,6 +1,7 @@
 #ifndef CHIP8_WITH_DEBUG_H_INCLUDED
 #define CHIP8_WITH_DEBUG_H_INCLUDED
 #include "debuger.h"
+#include "proccessor_controller.h"
 class debugger;
 class chip8_debug{
     public:

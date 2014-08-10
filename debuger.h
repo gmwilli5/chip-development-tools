@@ -24,5 +24,6 @@ class debugger{
         void save_stack();
         void mem_dump();
         void opcode_dump();
+        void pause();
 };
 #endif // DEBUGER_H_INCLUDED
